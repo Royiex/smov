@@ -129,22 +129,10 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
       </div>
       <Transition animation="slide-down" show={open}>
         <div className="rounded-lg absolute w-64 bg-dropdown-altBackground top-full mt-3 right-0">
-          {deviceName && bufferSeed ? (
-            <DropdownLink className="text-white" href="/settings">
-              <UserAvatar />
-              {decryptData(deviceName, bufferSeed)}
-            </DropdownLink>
-          ) : (
-            <DropdownLink href="/login" icon={Icons.RISING_STAR} highlight>
-              {t("navigation.menu.register")}
-            </DropdownLink>
-          )}
+          <DropdownLink>For Puki</DropdownLink>
           <Divider />
           <DropdownLink href="/settings" icon={Icons.SETTINGS}>
             {t("navigation.menu.settings")}
-          </DropdownLink>
-          <DropdownLink href="/about" icon={Icons.CIRCLE_QUESTION}>
-            {t("navigation.menu.about")}
           </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
             {t("navigation.menu.discover")}
@@ -158,19 +146,6 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
               {t("navigation.menu.logout")}
             </DropdownLink>
           ) : null}
-          <Divider />
-          <div className="my-4 flex justify-center items-center gap-4">
-            <CircleDropdownLink
-              href={conf().DISCORD_LINK}
-              icon={Icons.DISCORD}
-            />
-            <CircleDropdownLink href={conf().GITHUB_LINK} icon={Icons.GITHUB} />
-            <CircleDropdownLink
-              href={conf().TWITTER_LINK}
-              icon={Icons.TWITTER}
-            />
-            <CircleDropdownLink href="/support" icon={Icons.MAIL} />
-          </div>
         </div>
       </Transition>
     </div>

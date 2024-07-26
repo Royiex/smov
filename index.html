@@ -136,7 +136,21 @@
   <!-- disabling referrer can fix some provider problems -->
   <meta name="referrer" content="no-referrer" />
 
-  <title>sudo-flix</title>
+  <title> . . . . . sawa-movies .</title>
+
+  <script>
+		var space = " ";
+		var speed = "100";
+		var pos = 0;
+		var msg = "sawa-movies 	 . . . . . .";
+		function Scroll() {
+			document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
+			pos++;
+			if (pos > msg.length) pos = 0;
+			window.setTimeout("Scroll()", speed);
+		}
+		Scroll();
+	</script>
 
   {{#if opensearchEnabled }}
   <!-- OpenSearch -->
@@ -157,7 +171,7 @@
           "query-input": "required name=search_term_string"
           }
         }
-      </script>
+    </script>
   {{/if}}
 </head>
 

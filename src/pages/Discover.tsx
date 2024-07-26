@@ -502,16 +502,16 @@ export function Discover() {
           >
             <span className="flex items-center">
               {countdown !== null && countdown > 0 ? (
-                <div className="flex items-center inline-block">
-                  <span>Cancel Countdown</span>
+                <div className="flex items-center inline-block text-2xl">
+                  <span>Kancel</span>
                   <Icon
                     icon={Icons.X}
                     className="text-2xl ml-[4.5px] mb-[-0.7px]"
                   />
                 </div>
               ) : (
-                <div className="flex items-center inline-block">
-                  <span>Watch Something New</span>
+                <div className="flex items-center inline-block text-2xl">
+                  <span>Rendom Movi </span>
                   <img
                     src="/lightbar-images/dice.svg"
                     alt="Small Image"
@@ -523,61 +523,6 @@ export function Discover() {
               )}
             </span>
           </button>
-        </div>
-        {randomMovie && (
-          <div className="mt-4 mb-4 text-center">
-            <p>
-              Now Playing <span className="font-bold">{randomMovie.title}</span>{" "}
-              in {countdown}
-            </p>
-          </div>
-        )}
-        <div className="flex flex-col">
-          {categories.map((category) => (
-            <div
-              key={category.name}
-              id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className="mt-8"
-            >
-              {renderMovies(categoryMovies[category.name] || [], category.name)}
-            </div>
-          ))}
-          {genres.map((genre) => (
-            <div
-              key={`${genre.id}|${genre.name}`}
-              id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className="mt-8"
-            >
-              {renderMovies(genreMovies[genre.id] || [], genre.name)}
-            </div>
-          ))}
-          <div className="flex items-center">
-            <Divider marginClass="mr-5" />
-            <h1 className="text-4xl font-bold text-white mx-auto">Shows</h1>
-            <Divider marginClass="ml-5" />
-          </div>
-          {tvCategories.map((category) => (
-            <div
-              key={category.name}
-              id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className="mt-8"
-            >
-              {renderMovies(
-                categoryShows[category.name] || [],
-                category.name,
-                true,
-              )}
-            </div>
-          ))}
-          {tvGenres.map((genre) => (
-            <div
-              key={`${genre.id}|${genre.name}`}
-              id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className="mt-8"
-            >
-              {renderMovies(tvShowGenres[genre.id] || [], genre.name, true)}
-            </div>
-          ))}
         </div>
       </ThiccContainer>
     </SubPageLayout>
