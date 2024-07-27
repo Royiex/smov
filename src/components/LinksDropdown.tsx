@@ -131,9 +131,6 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
         <div className="rounded-lg absolute w-64 bg-dropdown-altBackground top-full mt-3 right-0">
           <DropdownLink>For Puki</DropdownLink>
           <Divider />
-          <DropdownLink href="/settings" icon={Icons.SETTINGS}>
-            {t("navigation.menu.settings")}
-          </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
             {t("navigation.menu.discover")}
           </DropdownLink>

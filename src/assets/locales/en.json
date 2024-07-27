@@ -263,8 +263,8 @@
   },
   "player": {
     "back": {
-      "default": "Back to home",
-      "short": "Back"
+      "default": "Bek tu Hom",
+      "short": "Bek"
     },
     "casting": {
       "enabled": "Casting to device 🎬"
@@ -294,8 +294,8 @@
         "title": "Download"
       },
       "episodes": {
-        "button": "Episodes",
-        "emptyState": "There are no episodes in this season, check back later (sorry :3)...",
+        "button": "Epizods",
+        "emptyState": "no epizodz in sizon",
         "episodeBadge": "E{{episode}}",
         "loadingError": "Error loading season",
         "loadingList": "Loading...",
@@ -314,15 +314,15 @@
         "title": "Quality"
       },
       "settings": {
-        "downloadItem": "Download",
-        "enableSubtitles": "Enable Subtitles",
-        "experienceSection": "Viewing experience",
-        "playbackItem": "Playback settings",
+        "downloadItem": "Dovnlod",
+        "enableSubtitles": "Enejbl Sabtajtles",
+        "experienceSection": "Vjuving eksperiens",
+        "playbackItem": "Plejbek Setingz",
         "audioItem": "Audio",
-        "qualityItem": "Quality",
-        "sourceItem": "Video sources",
-        "subtitleItem": "Subtitle settings",
-        "videoSection": "Video settings"
+        "qualityItem": "Kvaliti",
+        "sourceItem": "Video sorses",
+        "subtitleItem": "Sabtajtle setingz",
+        "videoSection": "Video setingz"
       },
       "sources": {
         "failed": {
